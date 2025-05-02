@@ -25,17 +25,23 @@ ETL Project: Weather Data ETL Pipeline
 * Postgres 13.2
 
 # Workflow Overview
+***(Work in progress)***
 
 # How to execute script:
 ## Prerequisites
+***(Work in progress)***
 
 ## Execution Steps
+***(Work in progress)***
 
 # Key Learning Points
+***(Work in progress)***
 
 # Future Improvements
+***(Work in progress)***
 
 # Acknowledgements
+***(Work in progress)***
 
 
 
