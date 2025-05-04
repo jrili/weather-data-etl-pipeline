@@ -1,0 +1,38 @@
+@startchen
+
+entity DAILY_WEATHER_LOG {
+  Date <<key>>
+  Location_ID
+  Conditions
+  Temp
+  Tempmax
+  Tempmin
+  Feelslike
+  Feelslikemax
+  Feelslikemin
+  Humidity
+  Precip
+  Snow
+  Windspeed
+  UVindex
+  Sunrise
+  Sunset
+}
+
+entity LOCATION {
+  Location_ID <<key>>
+  Latitude
+  Longitude
+  Address
+  ResolvedAddress
+  TimezoneOffset
+}
+
+relationship HAS {
+}
+
+LOCATION -N- HAS
+HAS -1- DAILY_WEATHER_HISTORY 
+
+@endchen
+

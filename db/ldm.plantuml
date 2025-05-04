@@ -1,0 +1,37 @@
+@startuml
+entity Location {
+  * location_id : number <<generated>>
+  --
+  * resolved_address : text <<unique>>
+  * latitude : float
+  * longitude : float
+  * requested_address : text
+  * timezone_offset : float
+}
+
+entity Daily_Weather_Log {
+  * date : date
+  * location_id : number <<FK>>
+  --
+  * conditions : text
+  * temp : float
+  * temp_max : float
+  * temp_min : float
+  * feelslike : float
+  * feelslike_max : float
+  * feelslike_min : float
+  * humidity : float
+  * precip : float
+  * windspeed : float
+  * uv_index : float
+  * sunrise : time
+  * sunset : time
+  snow : float
+}
+
+Location ||--o{ Daily_Weather_Log
+
+Location::location_id ||.down.o{ Daily_Weather_Log::location_id
+
+@enduml
+
